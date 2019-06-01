@@ -2,7 +2,12 @@
   <v-app>
     <v-toolbar color="primary" dark app>
       <v-toolbar-title class="headline">
-        <span>Cooky</span>
+        <v-layout align-center>
+          <i class="material-icons">
+          local_dining
+          </i>
+          <span class="title">Cooky</span>
+        </v-layout>
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
@@ -14,17 +19,21 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   },
-  data () {
+  data() {
     return {
       //
-    }
-  }
-}
+    };
+  },
+};
 </script>
+
+<style>
+  .title {
+    padding-left: .5em;
+  }
+</style>
